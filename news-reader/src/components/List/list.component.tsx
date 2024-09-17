@@ -165,9 +165,9 @@ So, it's not accurate to say that useCallback is only for functions and useMemo 
                   </StoryMeta>
                 </StoryDetails>
               </div>
-              <div style={{textAlign: 'right', position: 'relative'}}>
+              {/* <div style={{textAlign: 'right', position: 'relative'}}>
                 <button key={story?.id || index} onClick={() => handleBookmarkedStory(story?.id)}>Bookmark</button>
-              </div>
+              </div> */}
             </StoryContainer>
           ))}
           {isLoading &&

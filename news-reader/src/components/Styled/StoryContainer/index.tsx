@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const StoryContainer = styled.div`
   font-family: 'Inter', regular;
   color: rgba(0 0 0 / 100%);
-
   cursor: pointer;
   max-height: 90px;
   min-height: 90px;
+  display: flex;
   
   :hover * {
     cursor: pointer;
@@ -19,6 +19,9 @@ const StoryContainer = styled.div`
   }
   .item {
     display: flex;
+    @media (max-width: 576px) {
+      width: 75%;
+    }
   }
   .story-index {
     font-size: 48px;
